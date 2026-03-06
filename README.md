@@ -9,7 +9,7 @@ Flow: User Upload -> S3 Landing Zone -> S3 Event Notification -> AWS Lambda -> S
 <img width="1536" height="1024" alt="Serverless data pipe" src="https://github.com/user-attachments/assets/c0431d89-773f-4e6b-ae04-41659288efea" />
 
 
-## Technologies Used**
+## Technologies Used
 Compute: AWS Lambda (Python 3.9)
 Storage: AWS S3 (Simple Storage Service)
 Messaging: AWS SNS (Simple Notification Service)
@@ -34,7 +34,6 @@ Fail: If the schema is incorrect, the file is moved to the `quarantine_zone/` fo
 ### 4. Alerting
 If a file fails validation, the Lambda function publishes a message to an **AWS SNS Topic**, which sends an immediate email notification to the Data Engineering team.
 
----
 
 ## 📂 Project Structure
 
